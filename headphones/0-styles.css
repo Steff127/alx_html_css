@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-header {
+  padding: 50px 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(./web.image/headphones_hero_1.jpg) no-repeat center center/cover;
+  padding: 50px 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  height: 100vh;
+}
+
+.navbar,
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.branding {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.nav-links {
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  color: #ff6565;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 16px;
+  font-family: "San-Pro";
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #c02f2f;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.main {
+  padding: 100px;
+}
+
+.hero-content {
+  position: relative;
+  bottom: 50%;
+  right: 50px;
+
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.hero-content .hero-heading h2 {
+  font-size: 32px;
+}
+
+.hero-content .hero-heading h4 {
+  font-size: 16px;
+}
+
+.hero-btn {
+  background-color: #ff6565;
+  color: white;
+  width: 15%;
+  height: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff6565;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background-color: #c02f2f;
+  transform: scale(1);
+  transition-duration: 1s;
+  border: 1px solid #c02f2f;
+}
+
+@font-face {
+  font-family: "Spin-Cycle";
+  src: url(./fonts/Spin-Cycle-OT/spincycle_ot.otf);
+}
+
+@font-face {
+  font-family: "San-Pro";
+  src: url(./fonts/source-sans-pro/SourceSansPro-Black.otf);
+}
+
+.brand-name {
+  font-family: "Spin-Cycle";
+  font-size: 24px;
+}
+
+.hero-paragram p {
+  line-height: 20px;
+  font-size: 14px;
+  font-family: "San-Pro";
+}
